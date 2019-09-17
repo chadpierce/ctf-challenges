@@ -2,7 +2,8 @@
 
 This is simple reversing challenge. You don’t actually have to do any reversing for this one, though.  
 
-See the writeup pdf for more info.  
+The player is given the compiled "funcity" binary built from "funcity.c" and told to enter the password
+to retreive the flag.
 
 ### Here is the method I used to generate the flag from the password and a string of hex values
 
