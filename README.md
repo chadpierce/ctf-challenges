@@ -1,2 +1,2 @@
 # ctf-challs
-CTF challenges I have created
+Some of the CTF challenges I have created
