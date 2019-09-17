@@ -16,7 +16,7 @@ I used cyberchef to convert the strings to hex. For example, the first six chara
 "letsha" becomes "6c 65 74 73 68 61"  
 ```
 
-I then used the xor calculator at http://xor.pw to xor these 2 strings, which gave this result:  
+I then used the xor calculator at http://xor.pw to xor these 2 strings, which gave as result like this:  
 `a101a000d02`
 
 For the C application I them reformated the string in hex format adding the leading 0 and '\x' notation:  
