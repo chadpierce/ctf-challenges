@@ -1,7 +1,7 @@
 from socket import socket
 
 clientsocket = socket()
-clientsocket.connect(('challs.rfdsec.org', 12345))
+clientsocket.connect(('website_or_ip', 12345))
 
 while True:
     data = clientsocket.recv(1024).decode()  # get data from server and decode from 'bytes' type
