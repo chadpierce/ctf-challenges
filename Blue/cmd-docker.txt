@@ -1,0 +1,9 @@
+- docker compose
+docker-compose up
+
+- run in background
+docker run --name blue-nginx -p 7777:80 -v /home/blue/blue/html:/usr/share/nginx/html:ro -d nginx
+
+- run in foreground
+docker run --name blue-nginx -p 7777:80 -v /home/blue/blue/html:/usr/share/nginx/html:ro nginx
+

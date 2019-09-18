@@ -1,0 +1,20 @@
+web:
+  image: nginx
+  volumes:
+   - /home/blue/blue/html:/usr/share/nginx/html
+   - /home/blue/blue/nginx:/etc/nginx/conf.d
+   - /home/blue/blue/logs:/var/log/nginx
+  ports:
+   - "7777:80"
+  environment:
+   - NGINX_HOST=10.10.10.10
+   - NGINX_PORT=7777  # public port
+  links:
+   - php
+
+php:
+  image: php:7-fpm
+  volumes:
+   - /home/blue/blue/html:/usr/share/nginx/html
+  ports:
+   - "9000:9000"
